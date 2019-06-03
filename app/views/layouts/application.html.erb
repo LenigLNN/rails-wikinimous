@@ -7,9 +7,16 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   </head>
 
   <body>
-    <%= yield %>
+    <div class="banner">
+      <%= link_to "Wikinimous", articles_path %>
+      <%= link_to  "New article", new_article_path %>
+    </div>
+    <div class="middle">
+      <%= yield %>
+    </div>
   </body>
 </html>
